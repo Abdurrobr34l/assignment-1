@@ -1,6 +1,6 @@
 /* *FONT-FAMILY */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap"); /* Raleway Font-family */
-@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap'); /* Inter Font-family */
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"); /* Inter Font-family */
 
 /* *VARIABLES START */
 :root {
@@ -11,8 +11,10 @@
   --primary-clr: #252432;
   /* ---primary-clr-2: #1e1e1e; */
   --secondary-clr: rgba(37, 36, 50, 0.5);
-
+  --white-clr: #ffffff;
   --bg-clr: rgba(77, 71, 255, 0.1);
+
+  --border-10: 10px;
 }
 /* *VARIABLES END */
 
@@ -26,6 +28,7 @@
 body {
   font-family: system-ui, -apple-system, "Helvetica Neue", sans-serif;
   font-family: var(--font-inter);
+  background-color: #f5f8ff;
 }
 
 html {
@@ -78,19 +81,78 @@ img {
   display: flex;
 }
 
-.justify-content-center {
+.justify-center {
   justify-content: center;
 }
 
-.justify-space-between {
+.justify-between {
   justify-content: space-between;
 }
 
-.align-items-center {
+.align-center {
   align-items: center;
 }
 
 .text-center {
   text-align: center;
 }
+
+.btn {
+  padding: 12px 36px;
+  font-family: var(--font-raleway);
+  font-weight: 700;
+  background-color: var(--accent-clr);
+  color: var(--white-clr);
+  height: 48px;
+  border-radius: var(--border-10);
+  transition: all 0.23s ease-in-out;
+}
+.btn:hover {
+  background-color: var(--bg-clr);
+  color: var(--primary-clr);
+  outline: 2px solid var(--primary-clr);
+}
+.btn-animation {
+  transition: all 0.33s ease-in-out;
+}
+.btn-animation:hover {
+  transform: translateY(-5px);
+}
 /* *UTILITIES CLASS END */
+
+/* *HEADER START */
+header {
+  padding: 50px 0;
+  background-image: url(../images/banner.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid;
+}
+.logo a {
+  font-family: var(--font-inter);
+  font-size: 34px;
+  font-weight: 900;
+  color: var(--accent-clr);
+}
+/* *HEADER END */
+
+/* *HERO START */
+.hero {
+  padding: 158px 0 152px;
+}
+.contents {
+  text-align: center;
+}
+.contents h1 {
+  margin: 0 auto;
+  font-family: var(--font-raleway);
+  font-size: 65px;
+  font-weight: 700;
+  color: var(--primary-clr);
+  width: 70%;
+}
+.contents .btn {
+  margin-top: 37px;
+}
+/* *HERO END */
