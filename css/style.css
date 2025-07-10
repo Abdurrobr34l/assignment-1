@@ -144,7 +144,6 @@ header {
   background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid;
 }
 .logo a {
   font-family: var(--font-inter);
