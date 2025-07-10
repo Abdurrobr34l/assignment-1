@@ -15,6 +15,7 @@
   --bg-clr: rgba(77, 71, 255, 0.1);
 
   --border-10: 10px;
+  --border-24: 24px;
 }
 /* *VARIABLES END */
 
@@ -156,3 +157,36 @@ header {
   margin-top: 37px;
 }
 /* *HERO END */
+
+/* *PREVIEW START */
+.preview {
+  margin: 116px 0;
+}
+.preview-contents h2 {
+  font-family: var(--font-raleway);
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--primary-clr);
+}
+.preview-contents p {
+  margin: 23px 0;
+  font-family: var(--font-raleway);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--secondary-clr);
+  width: 60%;
+}
+.preview-image img {
+  width: 403px;
+  height: 328px;
+}
+/* *PREVIEW END */
+
+/* *COUNTER START */
+.counter-container {
+  padding: 50px 142px;
+  background-color: var(--bg-clr);
+  border-radius: var(--border-24);
+}
+/* *COUNTER END */
