@@ -42,7 +42,14 @@ a {
   color: inherit;
 }
 
+h1, h2, h3 {
+  font-family: var(--font-raleway);
+  color: var(--primary-clr);
+}
+
 p {
+  font-family: var(--font-inter);
+  font-weight: 400;
   color: var(--secondary-clr);
 }
 
@@ -156,10 +163,8 @@ header {
 }
 .contents h1 {
   margin: 0 auto;
-  font-family: var(--font-raleway);
   font-size: 65px;
   font-weight: 700;
-  color: var(--primary-clr);
   width: 70%;
 }
 .contents .btn {
@@ -172,10 +177,8 @@ header {
   margin: 116px 0;
 }
 .preview-contents h2 {
-  font-family: var(--font-raleway);
   font-size: 42px;
   font-weight: 700;
-  color: var(--primary-clr);
 }
 .preview-contents p {
   margin: 23px 0;
@@ -200,8 +203,6 @@ header {
 .counter-title h2 {
   font-family: var(--font-raleway);
   font-size: 38px;
-  font-weight: 700;
-  color: var(--primary-clr);
 }
 .counters {
   justify-content: center;
@@ -215,9 +216,7 @@ header {
   color: var(--accent-clr);
 }
 .counter p {
-  font-family: var(--font-inter);
   font-size: 20px;
-  font-weight: 400;
   color: rgb(0, 0, 0, 0.5);
 }
 /* *COUNTER END */
@@ -251,12 +250,9 @@ header {
   font-family: var(--font-inter);
   font-size: 24px;
   font-weight: 800;
-  color: var(--primary-clr);
 }
 .user .contents p {
   margin-top: 8px;
-  font-family: var(--font-inter);
-  font-weight: 400;
   width: 80%;
 }
 
@@ -269,8 +265,8 @@ header {
 .user-details {
   margin-top: 4px;
 }
-.user-details h4, p {
-  font-family: var(--font-inter);
+.user-details h4,
+p {
   color: #757575;
 }
 .user-details h4 {
@@ -282,3 +278,20 @@ header {
   color: #b3b3b3;
 }
 /* *USER END */
+
+/* *FOCUS START */
+.focus-container {
+  padding: 70px 150px;
+  border-radius: var(--border-14);
+  background-color: var(--white-clr);
+}
+.focus-contents h2 {
+  font-size: 50px;
+}
+.focus-contents p {
+  margin: 20px 0 0;
+}
+.focus-contents button {
+  margin: 20px 0;
+}
+/* *FOCUS END */
