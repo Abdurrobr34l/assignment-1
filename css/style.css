@@ -12,7 +12,7 @@
   /* ---primary-clr-2: #1e1e1e; */
   --secondary-clr: rgba(37, 36, 50, 0.5);
   --white-clr: #ffffff;
-  --bg-clr: rgba(77, 71, 255, 0.1);
+  --bg-clr: hsla(242, 100%, 64%, 0.1);
 
   --border-10: 10px;
   --border-24: 24px;
@@ -188,5 +188,26 @@ header {
   padding: 50px 142px;
   background-color: var(--bg-clr);
   border-radius: var(--border-24);
+}
+.counter-title h2 {
+  font-family: var(--font-raleway);
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--primary-clr);
+}
+.counters {
+  margin-top: 40px;
+}
+.counter h3 {
+    font-family: var(--font-inter);
+  font-size: 80px;
+  font-weight: 700;
+  color: var(--accent-clr);
+}
+.counter p {
+    font-family: var(--font-inter);
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(0, 0, 0, 0.5 );
 }
 /* *COUNTER END */
