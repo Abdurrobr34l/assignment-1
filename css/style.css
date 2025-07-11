@@ -58,12 +58,13 @@ button,
 textarea,
 select {
   font: inherit;
+  border: none;
   color: inherit;
 }
 
-/* textarea {
+textarea {
   resize: none;
-} */
+}
 
 button {
   border: none;
@@ -286,6 +287,7 @@ p {
 }
 .focus-contents h2 {
   font-size: 50px;
+    color: #000;
 }
 .focus-contents p {
   margin: 20px 0 0;
@@ -294,3 +296,38 @@ p {
   margin: 20px 0;
 }
 /* *FOCUS END */
+
+/* *FOCUS END */
+.login {
+  margin: 92px 0 14px;
+}
+.login-container {
+  padding: 71px 0;
+  gap: 100px;
+}
+.login-title, .login-form {
+  flex: 1;
+}
+.login-title h2 {
+  font-size: 97px;
+  font-weight: 700;
+  color: #000;
+}
+form label:not(:first-child), button {
+  margin-top: 20px;
+}
+form input, textarea {
+  margin-top: 10px;
+  border-radius: var(--border-10);
+  background-color: var(--white-clr);
+}
+form input, textarea {
+  padding: 20px 32px;
+  width: 100%;
+}
+.input:focus,
+button:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid var(--primary-clr);
+}
