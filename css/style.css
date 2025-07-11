@@ -126,11 +126,8 @@ img {
   transition: all 0.23s ease-in-out;
 }
 .btn:hover {
-  /* background-color: var(--bg-clr); */
   background-color: var(--primary-clr);
-  /* color: var(--primary-clr); */
   color: var(--accent-clr);
-  /* outline: 2px solid var(--bg-clr); */
 }
 .btn-animation {
   transition: all 0.33s ease-in-out;
@@ -168,6 +165,7 @@ header {
   font-size: 65px;
   font-weight: 700;
   width: 70%;
+  max-width: 900px;
 }
 .contents .btn {
   margin-top: 37px;
@@ -246,7 +244,7 @@ header {
 }
 
 .user {
-  border: 1px solid #D6DDED;
+  border: 1px solid #F2EDED;
 }
 .user .contents {
   text-align: justify;
