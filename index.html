@@ -11,7 +11,7 @@
 
 <body>
   <!-- ?HEADER START -->
-  <header>
+  <header id="home">
     <!-- *NAVBAR START -->
     <nav>
       <div class="container flex justify-between align-center">
@@ -21,7 +21,7 @@
         </div>
 
         <div class="nav-btn">
-          <button type="submit" class="btn">Sign Up</button>
+          <button type="submit" class="btn btn-animation">Sign Up</button>
         </div>
 
       </div>
@@ -42,7 +42,7 @@
   <!-- ?MAIN START -->
   <main>
     <!-- *PREVIEW START -->
-    <section class="preview">
+    <section class="preview" id="about">
       <div class="container flex justify-between align-center">
 
         <!-- ?Contents -->
@@ -198,7 +198,7 @@
     <!-- *USER END -->
 
     <!-- *FOCUS START -->
-    <section class="focus">
+    <section class="focus" id="how-it-works">
       <div class="focus-container container">
 
         <div class="focus-contents text-center">
@@ -216,7 +216,7 @@
     <!-- *FOCUS END -->
 
     <!-- *LOGIN FORM START -->
-    <section class="login">
+    <section class="login" id="service">
       <div class="login-container container flex align-center">
 
         <div class="login-title">
@@ -238,7 +238,7 @@
             <textarea name="message" id="message" placeholder="Write your message...." rows="5" required></textarea>
 
             <!-- ?Button -->
-             <button class="btn btn-animation">Get in Touch</button>
+            <button class="btn btn-animation login-button">Get in Touch</button>
           </form>
         </div>
 
@@ -250,7 +250,24 @@
 
   <!-- ?FOOTER START -->
   <footer>
+    <div class="footer-container container">
 
+      <div class="footer-contents logo text-center">
+        <a href="index.html">LucidUI</a>
+        <p>Ready to elevate your online presence? Contact us today to discuss your project and discover how we can bring
+          your vision to life.</p>
+      </div>
+
+      <div class="footer-menu">
+        <ul class="flex">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#how-it-works">How it Works</a></li>
+          <li><a href="#service">Services</a></li>
+        </ul>
+      </div>
+
+    </div>
   </footer>
   <!-- ?FOOTER END -->
 </body>
